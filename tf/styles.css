@@ -16,7 +16,7 @@ p{
   margin-top:50px;
 }
 
-.door
+.door, .door3, .door5
 {
   background-color: pink;
   position:absolute;
@@ -30,7 +30,21 @@ p{
   transition: all 0.5s ease-in-out;
 }
 
-.doorOpen
+.door2, .door4
+{
+  background-color: lightgreen;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:200px;
+  height:300px;
+ 
+  transform-origin: left;
+  /*Speed of the Door animation*/
+  transition: all 0.5s ease-in-out;
+}
+
+.doorOpen, .doorOpen2, .doorOpen3, .doorOpen4, .doorOpen5
 {
   /*prespectiv creates the door open effect*/
   transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
