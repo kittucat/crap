@@ -49,3 +49,53 @@ p{
   /*prespectiv creates the door open effect*/
   transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
 }
+
+.Press {
+  margin: 20px 20px 20px 20px;
+  display:flex;
+  justify-content: center;
+  padding-top: 50%;
+}
+.button {
+background: pink;
+border-radius: 50px;
+
+
+}
+
+.Look { 
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+background: linear-gradient(124deg, #ff2400, #ff2400, #ff8000, #ffff00, #1de840, #1ddde8, #2b1de8, #dd00f3, #ff00ff , #ff00ff);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 1s ease infinite;
+-z-animation: rainbow 6s ease infinite;
+-o-animation: rainbow 6s ease infinite;
+  animation: rainbow 6s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}

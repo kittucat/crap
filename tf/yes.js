@@ -1,3 +1,5 @@
+// For the doors to open
+//----------------------------------------------
 var element = document.querySelector(".door");
 element.addEventListener("click", toggleDoor);
 
@@ -31,4 +33,17 @@ element5.addEventListener("click", toggleDoor5);
 
 function toggleDoor5() {
   element5.classList.toggle("doorOpen5");
+}
+//--------------------------------------------------
+
+function RAINBOW(){
+  document.open();
+  document.write("<div class='Look'>Look </div>");
+  
+  document.close();
+  let hd = document.createElement('link');
+  hd.rel = "stylesheet";
+  hd.href="styles.css";
+  document.getElementsByTagName('head')[0].appendChild(hd);
+
 }
