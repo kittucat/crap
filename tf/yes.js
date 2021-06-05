@@ -1,4 +1,4 @@
-// For the doors to open (For every door it needed their own element)
+// we take the door class from html and give the value to element, then we add an addEventListener so everytime it gets clicked we call the function toggleDoor.
 //----------------------------------------------
 var element = document.querySelector(".door");
 element.addEventListener("click", toggleDoor);
