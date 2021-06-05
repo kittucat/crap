@@ -5,6 +5,8 @@ p{
   font-size: 30px;
 }
 
+//the look/color/animation for the book background and the pages
+//------------------------------------------------------------------------------------------------
 .backDoor
 {
   background-color: LightSkyBlue;
@@ -49,7 +51,10 @@ p{
   /*prespectiv creates the door open effect*/
   transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
 }
+//----------------------------------------------------------------------------------------------------------
 
+//The look for the button
+//-----------------------------------
 .Press {
   margin: 20px 20px 20px 20px;
   display:flex;
@@ -59,10 +64,11 @@ p{
 .button {
 background: pink;
 border-radius: 50px;
-
-
 }
+//-----------------------------------
 
+//The rainbow background that happens after the button gets clicked on
+//---------------------------------------------------------------------------------------------------------------------------------
 .Look { 
   height: 100%;
   width: 100%;
@@ -71,14 +77,22 @@ border-radius: 50px;
   top: 0;
   bottom: 0;
   position: absolute;
+  //The colors and at what angle the colors will tilt
+  //----------------------------------------------------------------------------------------------------------------------------
 background: linear-gradient(124deg, #ff2400, #ff2400, #ff8000, #ffff00, #1de840, #1ddde8, #2b1de8, #dd00f3, #ff00ff , #ff00ff);
+  //----------------------------------------------------------------------------------------------------------------------------
 background-size: 1800% 1800%;
 
+  //How many sekunds the colors will apair
+  //------------------------------------------
 -webkit-animation: rainbow 1s ease infinite;
 -z-animation: rainbow 6s ease infinite;
 -o-animation: rainbow 6s ease infinite;
   animation: rainbow 6s ease infinite;}
+//------------------------------------------
 
+//How much percent color should be transitioning
+//--------------------------------------------------
 @-webkit-keyframes rainbow {
     0%{background-position:0% 82%}
     50%{background-position:100% 19%}
@@ -99,3 +113,5 @@ background-size: 1800% 1800%;
     50%{background-position:100% 19%}
     100%{background-position:0% 82%}
 }
+//--------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------------
