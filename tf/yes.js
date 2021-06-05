@@ -1,4 +1,4 @@
-// For the doors to open
+// For the doors to open (For every door it needed their own element)
 //----------------------------------------------
 var element = document.querySelector(".door");
 element.addEventListener("click", toggleDoor);
@@ -36,14 +36,20 @@ function toggleDoor5() {
 }
 //--------------------------------------------------
 
+//A really old way to do this but it works so who cares. Basicly it "removes" everything in the html exept the class "look"
+//-------------------------------------------------------------------------------------------------------------------------------
 function RAINBOW(){
+  
   document.open();
   document.write("<div class='Look'>Look </div>");
-  
   document.close();
+//-------------------------------------------------------------------------------------------------------------------------------
+  
+  //then as well keep the stylesheet aka the css so that the animation can exist
+  //------------------------------------------------------------------------------
   let hd = document.createElement('link');
   hd.rel = "stylesheet";
   hd.href="styles.css";
   document.getElementsByTagName('head')[0].appendChild(hd);
-
+  //------------------------------------------------------------------------------
 }
